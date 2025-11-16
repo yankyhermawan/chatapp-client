@@ -58,8 +58,8 @@ const Room = () => {
     if (!currentTarget) return
     sendJsonMessage({
       message,
-      receiverId: currentTarget.id,
-      senderId: Number(auth.userId),
+      receiver_id: currentTarget.id,
+      sender_id: Number(auth.userId),
     })
     setMessage('')
   }
